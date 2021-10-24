@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_rowWeight="2"
+    android:layout_column="1"
+    android:orientation="vertical"
+    app:layoutDescription="@xml/listaelem_scene">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:columnCount="46"
+        app:rowCount="2">
+
+        <ImageView
+            android:id="@+id/kep"
+            android:layout_width="97dp"
+            android:layout_height="64dp"
+            app:layout_column="0"
+            app:layout_columnSpan="1"
+            app:layout_columnWeight="1"
+            app:layout_row="0"
+            app:layout_rowSpan="2"
+            app:layout_rowWeight="2"
+            app:srcCompat="@android:drawable/editbox_dropdown_light_frame"
+            tools:srcCompat="@drawable/eur" />
+
+        <TextView
+            android:id="@+id/currency"
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:text="EUR"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_column="1"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="2"
+            app:layout_row="0"
+            app:layout_rowSpan="1"
+            app:layout_rowWeight="1" />
+
+        <TextView
+            android:id="@+id/currencyName"
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:text="euro"
+            app:layout_column="1"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="2"
+            app:layout_row="1"
+            app:layout_rowSpan="1"
+            app:layout_rowWeight="1" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cumpara:"
+            android:textAlignment="textEnd"
+            app:layout_column="3"
+            app:layout_columnSpan="1"
+            app:layout_columnWeight="1"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vinde"
+            android:textAlignment="textEnd"
+            app:layout_column="3"
+            app:layout_columnSpan="1"
+            app:layout_columnWeight="1"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4,41200 RON"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_column="4"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="2"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/sell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4,45200 RON"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_column="4"
+            app:layout_columnSpan="2"
+            app:layout_columnWeight="2"
+            app:layout_row="1" />
+    </androidx.gridlayout.widget.GridLayout>
+</LinearLayout>
